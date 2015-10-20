@@ -1,7 +1,7 @@
 # GetYoutTubeLinks
 Get list of links to all your uploaded videos on YouTube. It works like this:
-* First, save all video list pages as html files to local disk by using the Macro Scheduler 14 script (getYouTubeLinks.scp). You can download a <a href="https://www.mjtnet.com/downloads.htm">30 day trial</a> to run this script.
-* Run the java program (GetYouTubeLinks.java) to extract individual video links and save them to a text file.
+* First, save all video list pages as html files to local disk by using the Macro Scheduler 14 <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/getYouTubeLinks.scp">script</a>. You can download a <a href="https://www.mjtnet.com/downloads.htm">30 day trial</a> to run this script.
+* Run the <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/GetYouTubeVideoLinks.java">java program</a> to extract individual video links and save them to a text file.
 
 <b>Raw notes:</b>
 * I upload my videos with the privacy setting of "Unlisted" which means that only people who have the link to a video can watch it. I need to share those links with a small number of people my wife and parents. Currently, there is no way to do that on YouTube. Sharing links manually is tedious. I wanted a program that would go to my YouTube page, extract the links of all my uploads so that I can copy those links and send a single email to the people with whom I want to share my videos. I want something similar for my Picasa albums too. But right now, let's focus on YouTube.
