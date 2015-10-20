@@ -15,7 +15,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Get URL links of all your uploaded YouTube videos.
+ * Get URL links of all your uploaded YouTube videos. The video html pages must be under ./htmlFiles directory saved before
+ * this program runs.
  *
  * @author şamil korkmaz, october 2015
  * @licence Public Domain
@@ -25,15 +26,6 @@ public class GetYouTubeVideoLinks {
     final public static String LINK_START = "https://www.youtube.com/watch?v=";
 
     public static void main(String[] args) throws MalformedURLException, IOException {
-        //URL ur = new URL("http://www.google.com/");
-        /*URL ur = new URL("https://www.youtube.com/my_videos?o=U&pi=1");
-         HttpURLConnection yc = (HttpURLConnection) ur.openConnection();
-         try (BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()))) {
-         String inputLine;
-         while ((inputLine = in.readLine()) != null) {
-         System.out.println(inputLine);
-         }
-         }*/
         List<String> htmlFileContents = readHTMLFiles("./htmlFiles/");
         List<String> allVideoLinks = new ArrayList<>();
         htmlFileContents.stream().forEach((htmlFileContent) -> {
