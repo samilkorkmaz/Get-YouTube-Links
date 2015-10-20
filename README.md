@@ -19,3 +19,4 @@ Problem: Authentication. Workaround: Use MacroScheduler:
 
 TODO:
 * In Macro Scheduler, set save path and clean it.
+* Create a similar repo for Picasa album links
