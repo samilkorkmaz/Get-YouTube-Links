@@ -17,7 +17,8 @@ import java.util.regex.Pattern;
 /**
  * Get URL links of all your uploaded YouTube videos.
  *
- * @author şamil
+ * @author şamil korkmaz, october 2015
+ * @licence Public Domain
  */
 public class GetYouTubeVideoLinks {
 
