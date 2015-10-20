@@ -1,0 +1,42 @@
+//Macro Scheduler 14 script to save YouTube video pages onto local disk for later processing.
+//Author: Şamil Korkmaz, October 2015
+//Licence: Public Domain
+
+//Set IGNORESPACES to 1 to force script interpreter to ignore spaces.
+//If using IGNORESPACES quote strings in {" ... "}
+//Let>IGNORESPACES=1
+Let>k=0
+Repeat>k
+  Let>k=k+1
+  SetFocus>Google Chrome*
+  Wait>0.5
+  MouseMoveRel>200,40
+  Wait>0.5
+  LClick
+  Wait>0.5
+  Press CTRL
+  Press a
+  Press Backspace
+  Release a
+  Wait>0.5
+  Let>path=https://www.youtube.com/my_videos?o=U&pi=
+  ConCat>path,%k%
+  GetWindowHandle>Videos - YouTube - Google Chrome,hWndParent
+  FindObject>hWndParent,Chrome_RenderWidgetHostHWND,,1,hWnd,X1,Y1,X2,Y2,result
+  ObjectSendKeys>hWnd,{%path%}
+  Wait>0.5
+  Press Enter
+  Wait>7
+  SetFocus>Google Chrome*
+  Wait>0.5
+  Press CTRL
+  Send s
+  Wait>2
+  GetWindowHandle>Farklı Kaydet,hWndParent
+  FindObject>hWndParent,Edit,,1,hWnd,X1,Y1,X2,Y2,result
+  Let>fileName=videos-
+  ConCat>fileName,%k%
+  ObjectSendKeys>hWnd,{%fileName%}
+  Press Enter
+  Wait>7
+Until>k=30
