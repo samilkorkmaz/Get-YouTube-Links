@@ -1,7 +1,7 @@
 # GetYoutTubeLinks
 Get links to all your uploaded videos on YouTube. It works like this:
-* First, open and save all video pages by using the Macro Scheduler script
-* Run the java program to extract individual video links and save them to a text file.
+* First, open and save all video pages by using the Macro Scheduler 14 script (getYouTubeLinks.scp)
+* Run the java program (GetYouTubeLinks.java) to extract individual video links and save them to a text file.
 
 Raw notes:
 
