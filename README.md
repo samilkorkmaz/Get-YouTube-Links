@@ -1,5 +1,9 @@
 # GetYoutTubeLinks
-Get list of links to all your uploaded videos on YouTube. Steps:
+Get list of links to all your uploaded videos on YouTube.
+
+I upload my videos to YouTube with the privacy setting of "Unlisted" which means that only people who have the link to a video can watch it. I need to share those links with a small number of people like my wife and parents. Currently, there is no way to do that on YouTube. Sharing links manually is tedious. I wanted a an automated way that to go to my YouTube page, extract the links of all my uploads so that I can copy those links and send a single email to the people with whom I want to share my videos.
+
+<b>Steps</b>:
 * Open Chrome, sign in to your Google account if you haven't already.
 * Navigate to uploaded video list page (https://www.youtube.com/my_videos?o=U&pi=1).
 * Run the Macro Scheduler 14 <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/getYouTubeLinks.scp">script</a> which opens and saves all video list pages as html files to local disk. You can download a <a href="https://www.mjtnet.com/downloads.htm">30 day trial</a> of Macro Scheduler to run this script.
@@ -8,7 +12,7 @@ Get list of links to all your uploaded videos on YouTube. Steps:
 * Run the <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/GetYouTubeVideoLinks.java">java program</a> to extract individual video links and save them to a text file called "allVideoLinks.txt"
 
 <b>Raw notes:</b>
-* I upload my videos with the privacy setting of "Unlisted" which means that only people who have the link to a video can watch it. I need to share those links with a small number of people my wife and parents. Currently, there is no way to do that on YouTube. Sharing links manually is tedious. I wanted a program that would go to my YouTube page, extract the links of all my uploads so that I can copy those links and send a single email to the people with whom I want to share my videos. I want something similar for my Picasa albums too. But right now, let's focus on YouTube.
+* I want something similar for my Picasa albums too. But right now, let's focus on YouTube.
 * Depends on YouTube page design. Valid for 20.10.2015, might not work when YouTube changes its page design.
 * Go to https://www.youtube.com/my_videos?o=U&pi=1
 * Note total nb of videos (880 in my case)
