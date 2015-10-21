@@ -1,6 +1,7 @@
 # GetYoutTubeLinks
 Get list of links to all your uploaded videos on YouTube. Steps:
-* Open Chrome, go to uploaded video list page (https://www.youtube.com/my_videos?o=U&pi=1).
+* Open Chrome, sign in to your Google account if you haven't already.
+* Navigate to uploaded video list page (https://www.youtube.com/my_videos?o=U&pi=1).
 * Run the Macro Scheduler 14 <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/getYouTubeLinks.scp">script</a> which opens and saves all video list pages as html files to local disk. You can download a <a href="https://www.mjtnet.com/downloads.htm">30 day trial</a> of Macro Scheduler to run this script.
 * Go to the directory where the java program is and create a directory with the name "htmlFiles".
 * Move the html pages that you saved previously to the htmlFiles directory.
@@ -14,7 +15,7 @@ Get list of links to all your uploaded videos on YouTube. Steps:
 * At each page, there are 30 videos. So, there will be 880/30 = 29.3 --> 30 pages
 * for i=1 to 30, get url links that are of the form "watch?v=". Note that there are 90 such items on a page with 30 videos, i.e. every link is repeated 3 times. So, you take every third of such links.
 
-Problem: Authentication. Workaround: Use MacroScheduler:
+Problem: Authentication. Workaround: Use MacroScheduler to simulate user interaction with Chrome:
 * Open YouTube page in browser (which was authenticated before by the user by signing in to Google).
 * Wait until page has finished loading, save page to a file, give it a name of "videos-n" where n is the number of the page.
 * Go to next page, repeat
