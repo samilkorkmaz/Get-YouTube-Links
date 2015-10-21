@@ -1,7 +1,7 @@
 # GetYoutTubeLinks
 Get list of links to all your uploaded videos on YouTube.
 
-I upload my videos to YouTube with the privacy setting of "Unlisted" which means that only people who have the link to a video can watch it. I need to share those links with a small number of people like my wife and parents. Currently, there is no way to do that on YouTube. Sharing links manually is tedious. I wanted a an automated way that to go to my YouTube page, extract the links of all my uploads so that I can copy those links and send a single email to the people with whom I want to share my videos.
+I upload my videos to YouTube with the privacy setting of "Unlisted" which means that only people who have the link to a video can watch it. I need to share those links with a small number of people like my wife and parents. Currently, there is no way to do that on YouTube. Sharing links manually is tedious because I have over 800 uploads. I wanted a an automated way to go to my YouTube page, extract the links of all my uploads so that I can copy those links and send a single email to the people with whom I want to share my videos.
 
 <b>Steps</b>:
 * Open Chrome, sign in to your Google account if you haven't already.
