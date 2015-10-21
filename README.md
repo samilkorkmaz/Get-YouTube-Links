@@ -1,7 +1,7 @@
 # GetYoutTubeLinks
 Get list of links to all your uploaded videos on YouTube. Steps:
-* Open Chrome, go to uploaded video page (https://www.youtube.com/my_videos?o=U&pi=1).
-* Using the Macro Scheduler 14 <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/getYouTubeLinks.scp">script</a>, save all video list pages as html files to local disk. You can download a <a href="https://www.mjtnet.com/downloads.htm">30 day trial</a> of Macro Scheduler to run this script.
+* Open Chrome, go to uploaded video list page (https://www.youtube.com/my_videos?o=U&pi=1).
+* Run the Macro Scheduler 14 <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/getYouTubeLinks.scp">script</a> which opens and saves all video list pages as html files to local disk. You can download a <a href="https://www.mjtnet.com/downloads.htm">30 day trial</a> of Macro Scheduler to run this script.
 * Go to the directory where the java program is and create a directory with the name "htmlFiles".
 * Move the html pages that you saved previously to the htmlFiles directory.
 * Run the <a href="https://github.com/samilkorkmaz/Get-YouTube-Links/blob/master/GetYouTubeVideoLinks.java">java program</a> to extract individual video links and save them to a text file.
