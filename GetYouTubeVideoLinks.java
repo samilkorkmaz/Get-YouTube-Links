@@ -15,7 +15,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Get URL links of all your uploaded YouTube videos. The video html pages must be under ./htmlFiles directory saved before
+ * Get URL links of all your uploaded YouTube videos. The video html pages must be under ./htmlFiles directory before
  * this program runs.
  *
  * @author şamil korkmaz, october 2015
